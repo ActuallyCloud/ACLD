@@ -1,0 +1,24 @@
+{
+  "name": "acld",
+  "version": "1.0.0",
+  "description": "The official ACLD website.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ActuallyCloud/ACLD.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ActuallyCloud/ACLD/issues"
+  },
+  "homepage": "https://github.com/ActuallyCloud/ACLD#readme",
+  "dependencies": {
+    "express": "^4.18.2",
+    "express-handlebars": "^6.0.6"
+  }
+}
