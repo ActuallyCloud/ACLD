@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Oxygen:wght@400;700&display=swap');
+
+html {
+  background-color: #222222;
+  color: #EEEEEE;
+  min-width: 600px;
+  margin: 0px;
+  padding: 0px;
+  font-family: 'Oxygen', sans-serif;
+}
+
+body {
+  margin: 0px;
+  padding: 0px;
+}
+
+h1 {
+  font-size: 60px;
+}
+
+h2 {
+  font-size: 40px;
+}
+
+h3 {
+  font-size: 30px;
+}
+
+h4 {
+  font-size: 25px;
+}
+
+h5 {
+  font-size: 21px;
+}
+
+p {
+  font-size: 18px;
+}
+
+a {
+  color: white;
+}
+
+hr {
+  margin: 0px;
+  padding: 0px;
+  color: #EEEEEE;
+}
+
+.fullwide {
+  width: 100%
+  margin: 0px;
+  padding: 0px;
+}
+
+.mainheader {
+  padding: 10px;
+  min-height: 200px;
+  height: 40vh;
+}
+
+.headerimg {
+  width: 30%;
+  max-width: 500px;
+}
+
+.midbound {
+  width: 80%;
+  max-width: 1200px;
+  margin: auto;
+  text-align: center;
+  align-items: center;
+}
+
+.navbar {
+  margin: 0em;
+  padding: 0.1em;
+  text-align: left;
+}
+
+.navitem {
+  display: inline-block;
+  padding: 5px 10px;
+  font-family: Oxygen, sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.navitem a {
+  color: white;
+  text-align: left;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.navitem a:hover {
+  opacity: 70%
+}
+
+.outage a {
+  color: red;
+}
+
+.colorful1 {
+  background: rgb(42,124,99);
+  background: linear-gradient(52deg, rgba(42,124,99,1) 20%, rgba(25,45,121,1) 80%);
+}

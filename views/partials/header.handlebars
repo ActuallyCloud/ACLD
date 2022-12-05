@@ -1,0 +1,27 @@
+<hr>
+<div class="midbound">
+  <nav class="navbar">
+    <ul class="navlist">
+      {{#if home}}
+      <li class="navitem active"><a href="/">Home</a></li>
+      {{else}}
+      <li class="navitem"><a href="/">Home</a></li>
+      {{/if}}
+
+      {{#if wellness}}
+      <li class="navitem active"><a href="/wellness">Wellness</a></li>
+      {{else}}
+      <li class="navitem"><a href="/wellness">Wellness</a></li>
+      {{/if}}
+
+      {{#if contact}}
+      <li class="navitem active"><a href="/contact">Contact Me</a></li>
+      {{else}}
+      <li class="navitem"><a href="/contact">Contact Me</a></li>
+      {{/if}}
+
+      <li class="navitem outage"><a href="https://cloud.instatus.com/">Outage?</a></li>
+    </ul>
+  </nav>
+</div>
+<hr>
