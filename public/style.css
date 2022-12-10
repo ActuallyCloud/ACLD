@@ -3,7 +3,7 @@
 html {
   background-color: #222222;
   color: #EEEEEE;
-  min-width: 600px;
+  min-width: 500px;
   margin: 0px;
   padding: 0px;
   font-family: 'Oxygen', sans-serif;
@@ -45,7 +45,9 @@ a {
 hr {
   margin: 0px;
   padding: 0px;
-  color: #EEEEEE;
+  background: #AAAAAA;
+  height: 1px;
+  color: #AAAAAA;
 }
 
 .fullwide {
@@ -57,12 +59,13 @@ hr {
 .mainheader {
   padding: 10px;
   min-height: 200px;
-  height: 40vh;
+  display: flex;
+  flex-direction: column;
 }
 
 .headerimg {
-  width: 30%;
-  max-width: 500px;
+  padding-bottom: 10px;
+  height: 25vh;
 }
 
 .midbound {
@@ -98,8 +101,25 @@ hr {
   opacity: 70%
 }
 
+.active {
+  border-bottom: 2px solid #EEEEEE;
+}
+
 .outage a {
   color: red;
+}
+
+.flexdiv {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: center;
+  align-items: center;
+}
+
+.flexitem {
+  flex: 0.5 0.5 250px;
+  margin: 10px;
 }
 
 .colorful1 {
