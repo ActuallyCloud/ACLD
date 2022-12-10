@@ -112,9 +112,9 @@ hr {
 .flexdiv {
   display: flex;
   flex-flow: row wrap;
-  align-items: center;
+  align-items: flex-start;
+  align-content: center;
   justify-content: center;
-  align-items: center;
 }
 
 .flexitem {
