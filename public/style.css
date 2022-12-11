@@ -3,7 +3,7 @@
 html {
   background-color: #222222;
   color: #EEEEEE;
-  min-width: 500px;
+  min-width: 400px;
   margin: 0px;
   padding: 0px;
   font-family: 'Oxygen', sans-serif;
@@ -40,6 +40,11 @@ p {
 
 a {
   color: white;
+  text-decoration: none;
+}
+
+a:hover {
+  opacity: 70%;
 }
 
 hr {
@@ -48,6 +53,10 @@ hr {
   background: #AAAAAA;
   height: 1px;
   color: #AAAAAA;
+}
+
+.standardlink {
+  border-bottom: 1px solid #EEEEEE;
 }
 
 .fullwide {
@@ -102,7 +111,7 @@ hr {
 }
 
 .active {
-  border-bottom: 2px solid #EEEEEE;
+  border-bottom: 1px solid #EEEEEE;
 }
 
 .outage a {
