@@ -100,6 +100,10 @@ hr {
   align-items: center;
 }
 
+.leftalign {
+  text-align: left;
+}
+
 .navbar {
   margin: 0em;
   padding: 0.1em;
@@ -127,6 +131,11 @@ hr {
 
 .active {
   border-bottom: 1px solid #EEEEEE;
+}
+
+.footer {
+  padding-top: 20px;
+  padding-bottom: 10px;
 }
 
 .outage a {
@@ -168,4 +177,14 @@ hr {
 .colorful1 {
   background: rgb(42,124,99);
   background: linear-gradient(52deg, rgba(42,124,99,1) 20%, rgba(25,45,121,1) 80%);
+}
+
+.colorful2 {
+  background: rgb(87,42,124);
+  background: linear-gradient(232deg, rgba(87,42,124,1) 0%, rgba(25,45,121,1) 100%);
+}
+
+.colorful3 {
+  background: rgb(42,124,99);
+  background: linear-gradient(232deg, rgba(42,124,99,1) 0%, rgba(110,121,25,1) 100%);
 }
