@@ -1,5 +1,5 @@
 # ACLD
-This repository contains the files and server that runs the official ACLD website.
+This repository contains the files and server that runs my website. I provide this repository to review the code that I write.
 
 # Notes
 - All images and logos of other companies are their respective properties. I make no claims of the trademark, nor do I endorse any other content except for my own on those sites by linking to them.
