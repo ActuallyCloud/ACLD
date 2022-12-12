@@ -180,11 +180,11 @@ hr {
 }
 
 .colorful2 {
-  background: rgb(87,42,124);
-  background: linear-gradient(232deg, rgba(87,42,124,1) 0%, rgba(25,45,121,1) 100%);
+  background: rgb(128,0,0);
+  background: linear-gradient(232deg, rgba(128,0,0,1) 0%, rgba(102,25,121,1) 100%);
 }
 
 .colorful3 {
-  background: rgb(42,124,99);
-  background: linear-gradient(232deg, rgba(42,124,99,1) 0%, rgba(110,121,25,1) 100%);
+  background: rgb(87,42,124);
+  background: linear-gradient(232deg, rgba(87,42,124,1) 0%, rgba(25,45,121,1) 100%);
 }
