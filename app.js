@@ -50,6 +50,6 @@ app.get('/ext/email', function(req,res){
 });
 
 // On startup, display this.
-app.listen('80',function(){
-    console.log('Website is online at port ' + 80);
+app.listen('3000',function(){
+    console.log('Website is online');
 });
