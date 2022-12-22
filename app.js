@@ -7,6 +7,9 @@ var app=express();
 // Initial setup
 app.set('views', path.join(__dirname, 'views'));
 
+// Setting port number
+const webport = 80;
+
 app.engine('handlebars', exphbs.create({
     defaultLayout: 'main',
     layoutsDir: app.get('views') + '/layouts'
@@ -50,6 +53,6 @@ app.get('/ext/email', function(req,res){
 });
 
 // On startup, display this.
-app.listen('3000',function(){
-    console.log('Website is online');
+app.listen(webport,function(){
+    console.log('Website is online at port ' + webport);
 });
