@@ -27,10 +27,6 @@ app.get('/contact',function(req,res){
     res.render('contact');
 });
 
-app.get('/server',function(req,res){
-    res.render('server');
-});
-
 app.get('/wellness',function(req,res){
     res.render('wellness');
 });
@@ -50,6 +46,14 @@ app.get('/ext/discord', function(req,res){
 
 app.get('/ext/email', function(req,res){
     res.redirect('mailto:dev@acld.me');
+});
+
+app.get('/ext/wellnessadd', function(req,res){
+    res.redirect('https://discord.com/invite/');
+});
+
+app.get('/ext/telepathyadd', function(req,res){
+    res.redirect('https://discord.com/invite/');
 });
 
 // On startup, display this.
