@@ -49,7 +49,7 @@ app.get('/ext/email', function(req,res){
 });
 
 app.get('/ext/wellnessadd', function(req,res){
-    res.redirect('https://discord.com/invite/');
+    res.redirect('https://discord.com/api/oauth2/authorize?client_id=580904388911169537&permissions=18432&scope=applications.commands%20bot');
 });
 
 app.get('/ext/telepathyadd', function(req,res){
