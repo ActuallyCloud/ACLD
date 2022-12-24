@@ -1,5 +1,11 @@
 <div class="midbound">
-  <p class="tinytext footer">Website designed and hosted by me using Express and Handlebars. Usage of my website
-  or services is governed by my <a href="/privacy" class="standardlink"> Terms Of Service / Privacy Policy</a>.
+  {{#if tospage}}
+  <p class="tinytext footer">Website designed and hosted by me using NodeJS, Express and Handlebars. Usage of my website
+  or services is governed by these terms of service and this privacy policy.
   For more info, <a href="/contact" class="standardlink">contact me</a>. Thanks for visiting!</p>
+  {{else}}
+  <p class="tinytext footer">Website designed and hosted by me using NodeJS, Express and Handlebars. Usage of my website
+  or services is governed by my <a href="/privacy" class="standardlink"> Terms Of Service and Privacy Policy</a>.
+  For more info, <a href="/contact" class="standardlink">contact me</a>. Thanks for visiting!</p>
+  {{/if}}
 </div>

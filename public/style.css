@@ -134,6 +134,16 @@ hr {
   border-bottom: 1px solid #EEEEEE;
 }
 
+.button {
+  border: 1px solid #EEEEEE;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.button:hover {
+  opacity: 70%;
+}
+
 .footer {
   padding-top: 20px;
   padding-bottom: 10px;
