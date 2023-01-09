@@ -15,9 +15,14 @@
     <link rel="icon" href="imgs/favicon.ico" type="image/x-icon"/>
     <link rel="shortcut icon" href="imgs/favicon.ico" type="image/x-icon"/>
 </head>
-<body>
+<body onload="pageLoad()">
     <div class="allpages">
         {{{body}}}
     </div>
 </body>
+<script>
+  function pageLoad() {
+    console.log("Page loaded")
+  }
+</script>
 </html>
