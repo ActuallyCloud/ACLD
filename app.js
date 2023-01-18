@@ -57,6 +57,16 @@ app.get('/ext/telepathyadd', function(req,res){ // Adds Telepathy (unreleased bo
     res.redirect('https://discord.com/invite/');
 });
 
+// Uptime monitoring response here. Also error 404 if no page found.
+app.get('/up',function(req,res){
+    res.send('Up!');
+    console.log("Pinged for uptime.");
+});
+
+app.all('*', (req, res) => {
+    res.status(404).render('404');
+});
+
 // On startup, display this when all is well.
 app.listen(webport,function(){
     console.log('Website is online at port ' + webport);
