@@ -5,7 +5,6 @@ var express=require('express');
 var exphbs=require('express-handlebars');
 var path=require('path');
 var app=express();
-var date = new Date();
 
 app.set('views', path.join(__dirname, 'views'));
 
@@ -61,6 +60,7 @@ app.get('/ext/telepathyadd', function(req,res){ // Adds Telepathy (unreleased bo
 // Uptime monitoring response here. Also error 404 if no page found.
 app.get('/up',function(req,res){
     res.status(200).send('Up!');
+    date = new Date();
     console.log("Pinged for uptime: " + date);
 });
 
