@@ -59,7 +59,7 @@ app.get('/ext/telepathyadd', function(req,res){ // Adds Telepathy (unreleased bo
 
 // Uptime monitoring response here. Also error 404 if no page found.
 app.get('/up',function(req,res){
-    res.status(200).send('Up!');
+    res.status(200).send('Up! o.0');
     date = new Date();
     console.log("Pinged for uptime: " + date);
 });
