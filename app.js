@@ -8,8 +8,8 @@ var app=express();
 
 app.set('views', path.join(__dirname, 'views'));
 
-// Setting port number. Website runs at default port 80 for HTTP traffic.
-const webport = 80;
+// Setting port number. Website runs at port 3000 for HTTP traffic.
+const webport = 3000;
 
 app.engine('handlebars', exphbs.create({
     defaultLayout: 'main',
