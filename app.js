@@ -9,7 +9,7 @@ var app=express();
 app.set('views', path.join(__dirname, 'views'));
 
 // Setting port number. Website runs at port 80 for HTTP traffic.
-const webport = 80;
+const webport = 8080;
 
 app.engine('handlebars', exphbs.create({
     defaultLayout: 'main',
