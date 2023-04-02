@@ -43,6 +43,8 @@ prompt "Do you still wish to run the script?" && {
 	apt install net-tools -y
 	echo
 	apt install iptables-persistent -y
+	echo
+	apt install snapd -y
 
 	echo
 	prompt "Do you want to install the latest LTS build of NodeJS?" && {
