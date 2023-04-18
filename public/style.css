@@ -69,7 +69,7 @@ hr {
 }
 
 .fullwide {
-  width: 100%
+  width: 100%;
   margin: 0px;
   padding: 0px;
 }
@@ -164,6 +164,14 @@ hr {
 .indexflexitem {
   flex: 0.5 0.5 250px;
   margin: 10px;
+}
+
+.fleximg {
+  width: 50%;
+  min-width: 100px;
+  max-width: 500px;
+  border: 2px solid #AAAAAA;
+  border-radius: 5px;
 }
 
 .commandsflexdiv {
