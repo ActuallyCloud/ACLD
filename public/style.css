@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
 
 html {
-  background-color: #222222;
+  background-color: #000000;
   color: #EEEEEE;
   min-width: 400px;
   margin: 0px;
@@ -97,6 +97,7 @@ hr {
   width: 80%;
   max-width: 1200px;
   margin: auto;
+  padding: 10px;
   text-align: center;
   align-items: center;
 }
@@ -166,12 +167,27 @@ hr {
   margin: 10px;
 }
 
+.indexfleximg {
+  flex: 0 0 300px;
+  margin: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid white;
+}
+
 .fleximg {
   width: 50%;
   min-width: 100px;
   max-width: 500px;
-  border: 2px solid #AAAAAA;
-  border-radius: 5px;
+}
+
+.galleryimg {
+  width: 50%;
+  min-width: 100px;
+  max-width: 500px;
+  border: 2px solid #111111;
+  border-radius: 10px;
 }
 
 .commandsflexdiv {
@@ -215,9 +231,12 @@ hr {
 .colorful2 {
   background: rgb(128,0,0);
   background: linear-gradient(232deg, rgba(128,0,0,1) 0%, rgba(102,25,121,1) 100%);
+
 }
 
 .colorful3 {
   background: rgb(87,42,124);
   background: linear-gradient(232deg, rgba(87,42,124,1) 0%, rgba(25,45,121,1) 100%);
+  min-height: 100vh;
+  margin: 0;
 }
