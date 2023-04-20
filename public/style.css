@@ -132,7 +132,7 @@ hr {
 }
 
 .active {
-  border-bottom: 1px solid #EEEEEE;
+  border-bottom: 2px solid #EEEEEE;
 }
 
 .button {
@@ -183,11 +183,14 @@ hr {
 }
 
 .galleryimg {
-  width: 50%;
+  flex: 0 0 300px;
+  margin: 10px;
   min-width: 100px;
   max-width: 500px;
-  border: 2px solid #111111;
+  border: 1px none;
   border-radius: 10px;
+  outline: 2px solid #AAAAAA;
+  outline-offset: -2px;
 }
 
 .commandsflexdiv {
