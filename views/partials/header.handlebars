@@ -2,43 +2,36 @@
   <nav class="navbar">
     <ul>
       {{#if home}}
-      <li class="navitem active"><a href="/" id="hm">Home</a></li>
+      <li class="navitem active"><a href="/">Home</a></li>
       {{else}}
-      <li class="navitem"><a href="/" id="hm">Home</a></li>
+      <li class="navitem"><a href="/">Home</a></li>
       {{/if}}
 
       {{#if contact}}
-      <li class="navitem active"><a href="/contact" id="ct">Contact</a></li>
+      <li class="navitem active"><a href="/contact">Contact Me</a></li>
       {{else}}
-      <li class="navitem"><a href="/contact" id="ct">Contact</a></li>
-      {{/if}}
-
-      {{#if wellness}}
-      <li class="navitem active"><a href="/wellness" id="wn">Wellness</a></li>
-      {{else}}
-      <li class="navitem"><a href="/wellness" id="wn">Wellness</a></li>
+      <li class="navitem"><a href="/contact">Contact Me</a></li>
       {{/if}}
 
       {{#if gallery}}
-      <li class="navitem active"><a href="/gallery" id="ge">Gallery</a></li>
+      <li class="navitem active"><a href="/gallery">Gallery</a></li>
       {{else}}
-      <li class="navitem"><a href="/gallery" id="ge">Gallery</a></li>
+      <li class="navitem"><a href="/gallery">Gallery</a></li>
+      {{/if}}
+
+      {{#if wellness}}
+      <li class="navitem active"><a href="/wellness">Wellness</a></li>
+      {{else}}
+      <li class="navitem"><a href="/wellness">Wellness</a></li>
+      {{/if}}
+
+      {{#if privacy}}
+      <li class="navitem active"><a href="/privacy">Privacy</a></li>
+      {{else}}
+      <li class="navitem"><a href="/privacy">Privacy</a></li>
       {{/if}}
 
       <li class="navitem outage"><a href="https://cloud.instatus.com/">Outage?</a></li>
     </ul>
   </nav>
-  <script>
-    homelink = document.getElementById("hm");
-    contactlink = document.getElementById("ct");
-    wellnesslink = document.getElementById("wn");
-    gallerylink = document.getElementById("ge");
-
-    homelink.addEventListener("click", function (a) {
-      event.preventDefault();
-      console.log("Home page clicked");
-      console.log(window.location.pathname);
-      targetpath = a.target.href;
-    });
-  </script>
 </div>
