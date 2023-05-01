@@ -4,7 +4,7 @@
 html {
   background-color: #000000;
   color: #EEEEEE;
-  min-width: 500px;
+  min-width: 450px;
   margin: 0px;
   padding: 0px;
   box-sizing: border-box;
@@ -151,7 +151,7 @@ hr {
 }
 
 .outage a {
-  color: red;
+  color: lightcoral;
 }
 
 .indexflexdiv {
@@ -193,7 +193,7 @@ hr {
 }
 
 .galleryimgh {
-  flex: 0 0 450px;
+  flex: 0 0 400px;
   margin: 10px;
   border: 1px none;
   width: 100%;
