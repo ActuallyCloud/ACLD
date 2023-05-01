@@ -2,9 +2,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
 
 html {
-  background-color: #000000;
+  background-color: #111111;
   color: #EEEEEE;
-  min-width: 500px;
+  min-width: 450px;
   margin: 0px;
   padding: 0px;
   box-sizing: border-box;
@@ -193,7 +193,7 @@ hr {
 }
 
 .galleryimgh {
-  flex: 0 0 450px;
+  flex: 0 0 400px;
   margin: 10px;
   border: 1px none;
   width: 100%;
@@ -251,4 +251,5 @@ hr {
   background: linear-gradient(232deg, rgba(87,42,124,1) 0%, rgba(25,45,121,1) 100%);
   min-height: 100vh;
   margin: 0;
+}
 }

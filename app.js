@@ -53,6 +53,10 @@ app.get('/ext/email', function(req,res){ // Opens an email to dev@acld.me, my em
     res.redirect('mailto:dev@acld.me');
 });
 
+app.get('/ext/status', function(req,res){
+    res.redirect('https://cloud.instatus.com/');
+});
+
 app.get('/ext/wellnessadd', function(req,res){ // Adds Wellness to any server.
     res.redirect('https://discord.com/api/oauth2/authorize?client_id=580904388911169537&permissions=18432&scope=applications.commands%20bot');
 });
