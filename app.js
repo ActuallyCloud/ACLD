@@ -8,7 +8,7 @@ var app=express();
 
 app.set('views', path.join(__dirname, 'views'));
 
-// Setting port number. Website runs at port 80 for HTTP traffic.
+// Setting port number. Website runs at port 8080 for HTTP traffic.
 const webport = 8080;
 
 app.engine('handlebars', exphbs.create({
@@ -19,7 +19,7 @@ app.set('view engine', 'handlebars');
 
 app.use(express.static(path.join(__dirname, 'public')));
 
-// This section controls rendering of webpages. This website has four pages.
+// This section controls rendering of webpages. This website has five pages.
 app.get('/',function(req,res){
     res.render('index');
 });
@@ -50,7 +50,7 @@ app.get('/ext/discord', function(req,res){ // The Cloud Support discord server.
 });
 
 app.get('/ext/email', function(req,res){ // Opens an email to dev@acld.me, my email.
-    res.redirect('mailto:dev@acld.me');
+    res.redirect('mailto:c@acld.me');
 });
 
 app.get('/ext/status', function(req,res){
@@ -76,7 +76,7 @@ app.all('*', (req, res) => {
     res.status(404).render('404');
 });
 
-// On startup, display this when all is well.
+// On startup, display this when website is ready.
 app.listen(webport,function(){
     console.log('Website is online at port ' + webport);
 });
