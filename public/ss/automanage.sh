@@ -31,7 +31,7 @@ prompt "Do you still wish to run the script?" && {
 
 	echo
 	echo "-----"
-	echo "Installing diagnostic tools..."
+	echo "Installing diagnostic tools and necessary packages..."
 	
 	echo
 	apt install speedtest-cli -y
@@ -45,6 +45,8 @@ prompt "Do you still wish to run the script?" && {
 	apt install iptables-persistent -y
 	echo
 	apt install snapd -y
+	echo
+	apt install unattended-upgrades -y
 
 	echo
 	prompt "Do you want to install the latest LTS build of NodeJS?" && {
@@ -66,6 +68,24 @@ prompt "Do you still wish to run the script?" && {
 		prompt "Do you want to install JDK 8?" && apt install openjdk-8-jdk -y
 		echo
 		prompt "Do you want to install JDK 17?" && apt install openjdk-17-jdk -y 
+	}
+
+	echo
+	prompt "Do you want to install Docker?" && {
+		echo
+		
+		apt install ca-certificates curl gnupg
+		install -m 0755 -d /etc/apt/keyrings
+		curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo gpg --dearmor -o /etc/apt/keyrings/docker.gpg
+		chmod a+r /etc/apt/keyrings/docker.gpg
+
+		apt install docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin
+	
+		echo 
+		echo "Testing the Docker installation using Hello World..."
+		echo
+
+		docker run hello-world
 	}
 
 	echo
@@ -125,6 +145,6 @@ prompt "Do you still wish to run the script?" && {
 	echo "------"
 	echo "Server setup has finished. Rebooting..."
 
-	sleep 2
+	sleep 3
 	reboot
 }
