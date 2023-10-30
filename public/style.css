@@ -88,7 +88,7 @@ hr {
 }
 
 .headerimg {
-  padding-bottom: 20px;
+  padding-bottom: 25px;
   height: 25vh;
 }
 
@@ -199,6 +199,17 @@ hr {
   border-radius: 10px;
   outline: 2px solid #AAAAAA;
   outline-offset: -2px;
+}
+
+.textboxes {
+  flex: 0 0 500px;
+  border: 1px none;
+  width: 500px;
+  min-height: 200px;
+  text-align: center;
+  margin: 10px;
+  vertical-align: middle;
+  border-radius: 10px;
 }
 
 .commandsflexdiv {

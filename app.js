@@ -69,6 +69,10 @@ app.get('/ext/figma-linker', function (req, res) { // Redirects to the Figma pro
     res.redirect('https://www.figma.com/proto/Hg8flxttRtx0qVc2obWXg9/Linker?type=design&node-id=1-2&t=qDSNgGGG3OLeuw37-1&scaling=scale-down&page-id=0%3A1&starting-point-node-id=1%3A2&mode=design');
 });
 
+app.get('/ext/github-acld', function (req, res) { // Redirects to the Figma prototype for Linker, a new type of messaging app.
+    res.redirect('https://github.com/ActuallyCloud/ACLD');
+});
+
 // Uptime monitoring response here. Also error 404 if no page found.
 app.get('/up',function(req,res){
     res.status(200).send('Up! o.0');
