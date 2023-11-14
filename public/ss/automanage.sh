@@ -47,6 +47,8 @@ prompt "Do you still wish to run the script?" && {
 	apt install snapd -y
 	echo
 	apt install unattended-upgrades -y
+	echo
+	apt install curl -y
 
 	echo
 	prompt "Do you want to install the latest LTS build of NodeJS?" && {
